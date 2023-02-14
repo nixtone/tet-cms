@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="<!-- $DESCRIPTION$ -->">
+<meta name="keywords" content="<!-- $KEYWORDS$ -->">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Dashboard</title>
+<link rel="stylesheet" href="static/custom.css">
+</head>
+<body>
+<div id="wrapper">
+	<header>		
+		<nav>
+			<a href="">Пользователи</a>
+			<a href=""></a>
+			<a href=""></a>
+		</nav>
+	</header>
+	<div id="content">
+		<aside>
+			<a href="">Посты</a>
+			<a href="">Новости</a>
+			<a href="">Каталог</a>
+		</aside>
+		<section>
+			
+			<div id="list" class="blok">
+				<h2>Список элементов</h2>
+				<table>
+					<tr>
+						<th>ID</th>
+						<th>Заголовок</th>
+						<th>Дата создания</th>
+						<th colspan="2">Управление</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Сегодня хорошая погода</td>
+						<td>2022-07-26 11:25:14</td>
+						<td>edit</td>
+						<td>del</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Сегодня хорошая погода</td>
+						<td>2022-07-26 11:25:14</td>
+						<td>edit</td>
+						<td>del</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Сегодня хорошая погода</td>
+						<td>2022-07-26 11:25:14</td>
+						<td>edit</td>
+						<td>del</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Сегодня хорошая погода</td>
+						<td>2022-07-26 11:25:14</td>
+						<td>edit</td>
+						<td>del</td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="edit" class="blok">
+				<h2>Редакция элемента</h2>
+				<div class="item">
+					<label for="field1">Заголовок</label>
+					<input type="text" name="" id="field1" class="field">
+				</div>
+				<div class="item">
+					<label for="field2">Категория</label>
+					<select name="" id="field2" class="field">
+						<option value="">Овощи</option>
+						<option value="">Фрукты</option>
+						<option value="">Другая бакалея</option>
+					</select>
+				</div>
+				<div class="item">
+					<input name="" type="checkbox" id="field4">
+					<label for="field4">Собрать урожай</label>
+				</div>
+				<div class="item">
+					<label for="field3">Описание</label>
+					<textarea name="" id="field3" class="field" rows="5"></textarea>
+				</div>
+				<div class="item send_wrap">
+					<input type="submit" value="Сохранить" class="send">
+				</div>
+			</div>
+
+		</section>
+	</div>
+</div>
+<footer>Footer</footer>
+<script src="static/jquery-3.6.0.min.js"></script>
+<script src="static/custom.js"></script>
+</body>
+</html>

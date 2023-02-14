@@ -1,0 +1,1 @@
+<div>template-full 1</div>

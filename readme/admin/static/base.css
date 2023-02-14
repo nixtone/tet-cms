@@ -1,0 +1,89 @@
+#wrapper {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+footer {
+	flex: 0 0 auto;
+	padding: 5px 15px;
+	background: #e1e1e1;
+}
+
+/* Атомарные классы */
+
+
+
+/* Основное */
+
+header {
+	flex: 0 1 auto;
+	background: #e1e1e1;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+#wrapper .inner {
+	display: flex;
+	flex-direction: row;
+	padding: 15px;
+	flex: 1 1 auto;
+}
+.sidebar {
+	flex: 0 1 auto;
+	margin-right: 15px;
+	min-width: 250px;
+}
+.content {
+	border: 1px solid #8f8f8f;
+	padding: 15px;
+	flex: 1 1 auto;
+}
+
+.section_list .active {
+	background: #e4e4e4;
+}
+
+.contextmenu {
+	position: absolute;
+	background: #e5e5e5;
+	padding: 3px 0;
+}
+.contextmenu a {
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+.contextmenu a:hover {
+	background: #ccc;
+	color: #454545;
+}
+/*
+.section .contextmenu .show {
+	border-top: 1px solid #ccc;
+}
+*/
+
+.line {
+	margin: 15px 0;
+}
+.line label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+/* Адаптив */
+
+@media all and (min-width: 1211px) {
+	.nob {
+		display: none;
+	}
+}
+@media all and (max-width: 1210px) {
+	.container:not(.cpn) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.nom {
+		display: none;
+	}
+}

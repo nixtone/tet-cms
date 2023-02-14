@@ -1,0 +1,83 @@
+### Установка ###
+Загрузка дампа, назначение админа, формирование ответов ajax
+- Выяснить необходимость расширений ['gd', 'mysqli', 'iconv', 'zip', 'dom', 'SimpleXML', 'mbstring', 'curl']
+
+
+    Переписать на ООП (пространства имен)
+    Восстановление пароля
+    3 попытки авторизации с 30 сек задержкой
+    Параметры для блоков в section_block
+
+    https://ruphp.com/csrf.html (Как правильно добавить токен CSRF с помощью PHP) https://habr.com/ru/post/109454/ (Входите! Аутентификация без логина и пароля, v2) https://www.youtube.com/watch?v=cGrIAFycpwA&list=PLZFDSY0g9advV820J80psX3aP_oXGQDT2 (Создание CMS на php)
+
+
+    ﻿/section?action=fill&id=3 ()
+/section?action=add&id=3
+/section?action=edit&id=3
+/section?action=delete&id=3
+/section?action=block&id=3
+
+
+/section?action=fill&id=3
+
+
+
+			<?/*
+			<ul class="list">
+				<li class="item"><a href="fill.php?sid=1" data-sid="1" data-link="/404">Страница не найдена</a></li>
+				<li class="item active"><a href="fill.php?sid=2" data-sid="2" data-link="/home">Главная</a></li>
+				<li class="item">
+					<a href="fill.php?sid=3" data-sid="3" data-link="/katalog">Каталог</a>
+					<ul class="list">
+						<li class="item"><a href="fill.php?sid=4" data-sid="4" data-link="/katalog/krossovki">Кроссовки</a></li>
+						<li class="item"><a href="fill.php?sid=5" data-sid="5" data-link="/katalog/mashini">Машины</a></li>
+					</ul>
+				</li>
+				<li class="item"><a href="fill.php?sid=6" data-sid="6" data-link="/forum">Форум</a></li>
+				<li class="item"><a href="fill.php?sid=7" data-sid="7" data-link="/onas">О нас</a></li>
+			</ul>
+			*/?>
+
+
+
+
+/* 
+
+### Работа с разделом ###
+
+раздел редакция            /admin/section/edit?id=1
+раздел новый	           /admin/section/add
+раздел Удалить 			   /admin/section/delete?id=1
+раздел новый подраздел     /admin/section/add?parent=0
+раздел список блоков 	   /admin/section/block?sid=1
+раздел добавить блок  	   /admin/section/block/add?sid=1
+раздел редактировать блок  /admin/section/block/edit?sid=1&section_block=1
+
+Наполнение - содержимое блока /admin/section?id=1&section_block=1
+Наполнение - редакция 'элемента' /admin/element/edit&id=1&section_block=1
+
+Категории блоков?
+
+### Пользователи ###
+
+
+### Разработка ###
+
+Дизайны список		/admin/design
+Дизайны редакция	/admin/design/edit?id=1
+Дизайны новый		/admin/design/add
+Дизайны удалить 	/admin/design/delete?id=1
+
+Блоки список 		/admin/block
+Блоки редакция 		/admin/block/edit?id=1
+Блок новый 			/admin/block/add
+
+Блоки поля 			/admin/block/field?bid=1
+Блоки поля редакция /admin/block/field?id=1
+Блоки поля новый 	/admin/block/field/add?bid=1
+
+Поля сайта 			/admin/field/site
+Поля раздела 		/admin/field/section
+Поля пользователей  /admin/field/user
+
+*/

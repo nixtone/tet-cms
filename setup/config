@@ -1,0 +1,22 @@
+<?
+return [
+
+	// База данных
+	'DB' => [
+		'HOST' => '<!-- $DB_HOST$ -->',
+		'NAME' => '<!-- $DB_NAME$ -->',
+		'USER' => '<!-- $DB_USER$ -->',
+		'PASSWORD' => '<!-- $DB_PASSWORD$ -->',
+		'PREFIX' => '<!-- $DB_PREFIX$ -->' // Например 'tet_'
+	],
+
+	// Права на файла и папки
+	'CHMOD' => [
+		'DIR' => <!-- $CHMOD_DIR$ -->,
+		'FILE' => <!-- $CHMOD_FILE$ -->
+	],
+
+	// Режим разработки
+	'DEV_MODE' => <!-- $DEV_MODE$ -->,
+
+];

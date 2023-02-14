@@ -1,0 +1,17 @@
+AddDefaultCharset UTF-8
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	
+	# Единая точка входа
+	RewriteCond %{THE_REQUEST} ^(GET|HEAD)\ /index\.php
+	RewriteRule .* / [R=301,L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_URI} !\..+$
+	RewriteRule ^(.*)$ /core/admin/index.php [L,QSA]
+	
+</IfModule>

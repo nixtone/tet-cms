@@ -1,0 +1,72 @@
+### Буфер ###
+
+# Свободные поля
+DATE_CREATED
+DATE_EDITED
+
+ka_ (перед каждой таблицей префикс)
+
+### Структурообразующие ###
+
+_block (список блоков) 2
+ID
+NAME
+
+_section_block (блоки по разделам) 6
+ID
+ACTIVE
+SORT
+NAME
+SECTION
+BLOCK
+
+_section (список разделов) 7
+ID
+ACTIVE
+SORT
+NAME
+FOLDER
+DESIGN
+PARENT
+
+_design (шаблоны) 3
+ID
+NAME
+PARENT
+
+_site (информация о сайте) 4
+ID
+ACTIVE (0 - отключен, 1 - активен, 2 - режим разработки)
+DOMAIN
+SECTION_INDEX
+SECTION_404
+
+_user (пользователи) 6
+ID
+ACTIVE (0 - заблокирован, 1 - активен, 2 - на восстановлении)
+LOGIN
+EMAIL
+PASSWORD
+USER_GROUP
+
+
+### Приходные, блоки содержащие контент ### 8
+
+_block1
+ID
+ACTIVE
+SORT
+SECTION
+SECTION_BLOCK
+CATEGORY
+URL_ALTERNATIVE
+-- TEXT
+
+_block1category
+ID
+ACTIVE
+SORT
+SECTION
+SECTION_BLOCK
+PARENT
+NAME

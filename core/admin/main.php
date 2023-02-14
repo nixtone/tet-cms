@@ -1,0 +1,1 @@
+<p>Вы вошли как <strong><?=$CORE['CURRENT']['USER']['LOGIN']?></strong>, <a href="/core/admin/?exit">Выход</a></p>

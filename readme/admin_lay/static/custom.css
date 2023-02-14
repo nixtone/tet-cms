@@ -1,0 +1,125 @@
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	font-family: Arial;
+	font-size: 0.8em;
+	color: #454545;
+}
+#wrapper {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+footer {
+	flex: 0 0 auto;
+	background: #acdb97;
+	padding: 5px 15px;
+}
+
+/* Атомарные классы */
+
+h2 {
+	border-bottom: 4px solid #676767;
+	padding: 0 0 10px;
+	color: #454545;
+	margin: 0 0 15px;
+}
+.blok {
+	margin-bottom: 20px;
+}
+table {
+	width: 100%;
+}
+tr:first-child {
+	background: #5f6065;
+	color: #fff;
+}
+tr:nth-child(2n) {
+	background: #f1f1f1;
+}
+th, td {
+	padding: 10px 15px;
+	/* background: #ececec; */
+	/*border: 1px solid #ccc;*/
+}
+
+/* Основное */
+
+header {
+	padding: 20px;
+	background: #424242;
+}
+header a {
+	color: #fff;
+}
+
+#content {
+	display: flex;
+	flex-grow: 1;
+}
+
+aside {
+	background: #eee;
+	padding: 0 20px;
+	width: 230px;
+}
+aside a {
+	display: block;
+	margin: 10px 0;
+}
+section {
+	flex-grow: 1;
+	padding: 20px;
+}
+
+#edit .item {
+	margin-bottom: 15px;
+}
+#edit .item label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+#edit .item .field {
+	padding: 5px;
+	width: 350px;
+	font-family: Arial;
+	font-size: 0.8rem;
+	box-sizing: border-box;
+}
+#edit .item input + label {
+	display: inline;
+}
+#edit .item.send_wrap {
+	border-top: 1px solid #ddd;
+	padding-top: 15px;
+	margin-top: 15px;
+}
+#edit .item .send {
+	padding: 4px 10px 5px;
+	cursor: pointer;
+}
+
+
+/* Адаптив */
+
+@media all and (min-width: 1211px) {
+	.nob {
+		display: none;
+	}
+	
+}
+@media all and (max-width: 1210px) {
+	.container:not(.cpn) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.nom {
+		display: none;
+	}
+
+}

@@ -1,0 +1,26 @@
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+#wrapper {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+#wrap-inner {
+	flex-grow: 1;
+	display: flex;
+}
+section {
+	flex-grow: 1;
+}
+
+/**/
+header     { background: #e3f1ff; }
+aside   { background: #f2e0b5; }
+footer     { background: #edffe5; }
+section { background: #d0ecc4; }

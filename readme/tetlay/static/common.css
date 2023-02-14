@@ -1,0 +1,71 @@
+.container {
+	box-sizing: border-box;
+	margin:0 auto;
+	max-width: 800px; /* Задать ширину блоков */
+	min-width: 320px;
+}
+
+h2 {
+	margin: 0 0 15px;
+	padding: 0 0 10px;
+	border-bottom: 4px solid #676767;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 15px 0;
+}
+th, td {
+	padding: 7px 10px;
+}
+th {
+	background-color: #5e6066;
+	color: #fff;
+	font-weight: normal;
+	text-align: left;
+	border-right: 1px solid #505257;
+}
+tr:nth-child(2n) {
+	background: #edeeee;
+}
+
+.text {
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 0.8em; 
+	line-height: 23px;
+	color: #454545;
+}
+
+.field {
+	padding: 5px 8px 7px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	max-width: 500px;
+	width: 100%;
+	font-family: Arial, Helvetica, Verdana;
+	color: #454545;
+	line-height: 23px;
+	font-size: 0.8rem;
+}
+
+.btn_wrap {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 15px;
+	border-top: 1px solid #eee;
+	padding-top: 15px;
+}
+.btn {
+	background: #454545;
+	border: 0;
+	color: #fff;
+	padding: 3px 15px 5px;
+	cursor: pointer;
+	margin-right: 10px;
+	line-height: 23px;
+}
+.btn.disabled {
+	opacity: 0.5;
+	cursor: default;
+}
