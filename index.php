@@ -68,5 +68,5 @@ echo $page; // htmlVar()
 // p($TEST, 'vd');
 
 
-p($CORE);
+// p($CORE);
 

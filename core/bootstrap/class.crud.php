@@ -11,12 +11,18 @@ class crud {
 		return DB::Query("INSERT INTO `".DB::$prefix.$this->tableName."`".DB::setChain($arFields), "lastId", $arFields);
 	}
 
+	public function ReadOne($ID = false, $arFields = []) {
+		$arList = $this->crudRead($ID, $arFields);
+		return $arList[array_key_first($arList)];
+	}
+
 	protected function crudRead($ID = false, $arFields = [], $pagination = [], $SORT = ['ID' => 'ASC'], $ROWS = '*') {
 		
 		$LIMIT = '';
 		$row_s = "rows";
 		if(is_int($ID) OR $ID == "row") $row_s = "row";
 		if($ID AND $ID != 'row') $arFields['ID'] = $ID;
+		
 		/*
 		
 		if($ID) $fields['ID'] = $ID;
