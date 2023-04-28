@@ -6,7 +6,7 @@ class url extends crud {
 
 	public function __construct() {
 		global $CORE;
-		preg_match("/[a-z]+\.[a-z]+$/", $_SERVER['HTTP_HOST'], $host);
+		preg_match("/[a-z0-9\-]+\.[a-z]+$/", $_SERVER['HTTP_HOST'], $host);
 		$parse = parse_url($_SERVER['REQUEST_URI']);
 		$CORE['CURRENT']['URL']['DOMAIN'] = $host[0];
 		$CORE['CURRENT']['URL']['HTTP_HOST'] = $_SERVER['HTTP_HOST'];
